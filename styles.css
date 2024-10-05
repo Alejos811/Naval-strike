@@ -36,8 +36,8 @@ th, td {
     border: 1px solid #ffffff; /* White borders */
     padding: 10px;
     text-align: center;
-    width: 60px; /* Double width */
-    height: 60px; /* Double height */
+    width: 60px; /* Original 50px * 1.2 */
+    height: 60px; /* Original 50px * 1.2 */
 }
 
 .cell {
