@@ -1,13 +1,27 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #001f3f; /* Navy blue background */
+    color: #ffffff; /* White text */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h1 {
     margin-bottom: 20px;
+    color: #ffffff; /* White text */
+}
+
+.pixel-art-container img {
+    width: 100px; /* Adjust size as needed */
+    margin: 5px;
 }
 
 table {
@@ -16,7 +30,7 @@ table {
 }
 
 th, td {
-    border: 1px solid #000;
+    border: 1px solid #ffffff; /* White borders */
     padding: 10px;
     text-align: center;
 }
@@ -24,4 +38,7 @@ th, td {
 input[type="checkbox"] {
     width: 20px;
     height: 20px;
+    border-radius: 50%; /* Makes checkboxes round */
+    cursor: pointer;
+    accent-color: #ffffff; /* Changes checkbox color */
 }
