@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naval Strike Progress Tracker</title>
+    <title>Naval Strike</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Naval Strike Progress Tracker</h1>
+        <h1>Naval Strike</h1>
         <div class="pixel-art-container">
-            <!-- Add your pixel art images here -->
             <img src="ship.png" alt="Pixel Art Ship">
             <img src="submarine.png" alt="Pixel Art Submarine">
         </div>
@@ -47,5 +46,12 @@
             <tr><th>11</th><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td></tr>
         </tbody>
     </table>
+    <button onclick="clearCheckboxes()">Clear All</button>
+    <script>
+        function clearCheckboxes() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => checkbox.checked = false);
+        }
+    </script>
 </body>
 </html>
