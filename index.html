@@ -46,7 +46,7 @@
             <tr><th>11</th><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td><td class="cell"></td></tr>
         </tbody>
     </table>
-    <button onclick="clearCells()">Clear All</button>
+    <button onclick="confirmClear()">Clear All</button>
     <script>
         // Toggle cell color on click
         document.querySelectorAll('.cell').forEach(cell => {
@@ -60,6 +60,13 @@
                 }
             });
         });
+
+        // Function to confirm and clear all cells
+        function confirmClear() {
+            if (confirm("Are you sure you want to clear all?")) {
+                clearCells();
+            }
+        }
 
         // Function to clear all cells
         function clearCells() {
