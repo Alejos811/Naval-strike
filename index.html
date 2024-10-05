@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naval Strike Progress Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Naval Strike Progress Tracker</h1>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>E</th>
+                <th>F</th>
+                <th>G</th>
+                <th>H</th>
+                <th>I</th>
+                <th>J</th>
+                <th>K</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Loop through rows 1 to 11 -->
+            {% for i in 1..11 %}
+            <tr>
+                <th>{{ i }}</th>
+                {% for j in 1..11 %}
+                <td><input type="checkbox"></td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
