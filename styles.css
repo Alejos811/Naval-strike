@@ -36,14 +36,12 @@ th, td {
     border: 1px solid #ffffff; /* White borders */
     padding: 10px;
     text-align: center;
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
 }
 
-input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%; /* Makes checkboxes round */
+.cell {
     cursor: pointer;
-    accent-color: #ffffff; /* Changes checkbox color */
 }
 
 button {
