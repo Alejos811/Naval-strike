@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naval Strike Tracker</title>
+    <title>Naval Strike Progress Tracker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,24 +26,16 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Generate rows 1 to 11 dynamically with script or manually -->
+            <!-- Loop through rows 1 to 11 -->
+            {% for i in 1..11 %}
             <tr>
-                <th>1</th>
+                <th>{{ i }}</th>
+                {% for j in 1..11 %}
                 <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
+                {% endfor %}
             </tr>
-            <!-- Repeat above tr block for rows 2 through 11 -->
+            {% endfor %}
         </tbody>
     </table>
 </body>
 </html>
-
