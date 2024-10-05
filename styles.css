@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #001f3f; /* Navy blue background */
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Kids-friendly and somewhat navy-related font */
+    background: linear-gradient(135deg, #001f3f, #005082, #189AD3); /* Three-tone navy blue gradient */
     color: #ffffff; /* White text */
     display: flex;
     flex-direction: column;
@@ -16,7 +16,10 @@ header {
 
 h1 {
     margin-bottom: 20px;
-    color: #ffffff; /* White text */
+    background: linear-gradient(to right, #FFD700, #FFA500); /* Yellow to orange gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem; /* Adjust as needed */
 }
 
 .pixel-art-container img {
@@ -41,4 +44,20 @@ input[type="checkbox"] {
     border-radius: 50%; /* Makes checkboxes round */
     cursor: pointer;
     accent-color: #ffffff; /* Changes checkbox color */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #001f3f;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005082;
+    color: #ffffff;
 }
