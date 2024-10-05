@@ -51,12 +51,12 @@
         // Toggle cell color on click
         document.querySelectorAll('.cell').forEach(cell => {
             cell.addEventListener('click', function () {
-                if (this.style.backgroundColor === 'red') {
+                if (this.style.backgroundColor === '') {
                     this.style.backgroundColor = 'white';
                 } else if (this.style.backgroundColor === 'white') {
-                    this.style.backgroundColor = '';
-                } else {
                     this.style.backgroundColor = 'red';
+                } else {
+                    this.style.backgroundColor = '';
                 }
             });
         });
